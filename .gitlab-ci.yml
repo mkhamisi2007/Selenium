@@ -6,4 +6,8 @@ selenium-tests:
   image: "selenium/standalone-chrome"  # یا یه ایمیج سفارشی که Python هم داشته باشه
   script:
     - pip install pytest selenium
-    - pytest tests/
+    - pytest tests/ --html=report.html
+    
+artifacts:
+  paths:
+    - report.html
