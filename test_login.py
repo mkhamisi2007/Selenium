@@ -2,6 +2,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 def test_login():
+    # --- run headless ------
+    #options = webdriver.ChromeOptions()
+    #options.add_argument('--headless')
+    #driver = webdriver.Chrome(options=options)
+
     driver = webdriver.Chrome()
     driver.get("https://example.com/login")
     
