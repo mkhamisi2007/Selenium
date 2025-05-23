@@ -8,6 +8,6 @@ selenium-tests:
     - pip install pytest selenium
     - pytest tests/ --html=report.html 
     
-artifacts:
+artifacts: 
   paths:
     - report.html
