@@ -1,6 +1,6 @@
 stages:
   - test
-
+ 
 selenium-tests:
   stage: test
   image: "selenium/standalone-chrome"  # یا یه ایمیج سفارشی که Python هم داشته باشه
