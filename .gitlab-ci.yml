@@ -10,4 +10,4 @@ selenium-tests:
     
 artifacts: 
   paths:
-    - report.html
+    - report.html 
