@@ -14,5 +14,5 @@ def test_login():
     driver.find_element(By.NAME, "password").send_keys("password123")
     driver.find_element(By.ID, "login-btn").click()
     
-    assert "Dashboard" in driver.title
+    assert "Dashboard" in driver.title 
     driver.quit()
