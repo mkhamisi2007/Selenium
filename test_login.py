@@ -15,4 +15,4 @@ def test_login():
     driver.find_element(By.ID, "login-btn").click()
     
     assert "Dashboard" in driver.title 
-    driver.quit()
+    driver.quit() 
