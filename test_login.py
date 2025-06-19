@@ -16,3 +16,4 @@ def test_login():
     
     assert "Dashboard" in driver.title 
     driver.quit() 
+ 
