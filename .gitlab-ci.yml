@@ -1,0 +1,13 @@
+stages:
+  - test
+  
+selenium-tests:
+  stage: test
+  image: "selenium/standalone-chrome"  # یا یه ایمیج سفارشی که Python هم داشته باشه
+  script:
+    - pip install pytest selenium
+    - pytest tests/ --html=report.html 
+    
+artifacts: 
+  paths:
+    - report.html 
